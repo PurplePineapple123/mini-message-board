@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <title><%= title %> </title>
+
+
+
+<form method="POST" action="/new">
+  <table>
+    <tr>
+    <td>Name</td>
+    <td><input type="text" name="messageUser" ></td>
+    </tr>
+    <tr>
+    <td>Message Text</td>
+    <td><input type="text" name="messageText" ></td>
+    </tr>
+    <tr>
+    <td colspan="2"><input type="submit" value="Submit Post" ></td>
+    </tr>
+</table>
+</form>
+</body>
+
+
+</html>

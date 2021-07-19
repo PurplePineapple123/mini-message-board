@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <p><a  href="/new" >Create A New Post</a></p>
+
+  <h1>
+    <%= title %>
+  </h1>
+  <p>Welcome to <%= title %>
+  </p>
+
+  <% if (messages.length) { %>
+    <ul>
+      <% messages.forEach((message)=> {
+        %>
+        <li>
+          <%= message.text %>
+        </li>
+        <li>
+          <%= message.user %>
+        </li>
+        <li>
+          <%= message.added %>
+        </li>
+        <br>
+        <% }) %>
+    </ul>
+    <% } %>
+
+</body>
+
+</html>
